@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Покемони: Області видимості та This</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="game-container">
+    <h1>Битва покемонів (JS: This & Scope)</h1>
+
+    <div class="arena">
+      <!-- Персонаж -->
+      <div class="card" id="character-card">
+        <h2 id="name-character">Pikachu</h2>
+        <div class="health-bar-container">
+          <div class="health-bar" id="progressbar-character"></div>
+        </div>
+        <p class="health-text" id="health-character">100 / 100 HP</p>
+        <button id="btn-character-greet" class="btn btn-secondary">Привітатися</button>
+      </div>
+
+      <div class="vs">VS</div>
+
+      <!-- Ворог -->
+      <div class="card" id="enemy-card">
+        <h2 id="name-enemy">Charmander</h2>
+        <div class="health-bar-container">
+          <div class="health-bar" id="progressbar-enemy"></div>
+        </div>
+        <p class="health-text" id="health-enemy">100 / 100 HP</p>
+        <button id="btn-enemy-greet" class="btn btn-secondary">Привітатися</button>
+      </div>
+    </div>
+
+    <!-- Керування битвою -->
+    <div class="controls">
+      <button id="btn-attack" class="btn btn-attack">Атакувати (Pikachu завдає удар)</button>
+      <button id="btn-restart" class="btn btn-reset">Почати спочатку</button>
+    </div>
+
+    <!-- Лог подій -->
+    <div class="logs-container">
+      <h3>Журнал бою:</h3>
+      <div id="logs" class="logs"></div>
+    </div>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
